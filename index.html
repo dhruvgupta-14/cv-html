@@ -17,60 +17,61 @@
       color: #000;
       max-width: 8.5in;
       margin: 0 auto;
-      padding: 0.5in;
-      font-size: 10pt;
+      padding: 0.2in;
+      font-size: 9pt;
+      border-left: 2px solid #999;
     }
 
     .header {
       text-align: center;
-      margin-bottom: 8px;
-      border-bottom: 1px solid #333;
       padding-bottom: 4px;
     }
 
     .header h1 {
-      font-size: 14pt;
+      font-size: 13pt;
       font-weight: bold;
     }
 
     .header p {
-      font-size: 11pt;
+      font-size: 10pt;
       font-style: italic;
     }
 
     .header .contact {
       font-size: 9pt;
       margin-top: 4px;
+      color: #000;
     }
 
-    .header .contact  {
+    .header .contact a {
       color: #000;
       text-decoration: none;
       margin: 0 6px;
     }
 
-    .section { 
-      margin-bottom: 10px;
-    }
-
-    .section h2 {
-      text-align: center;  
-      font-size: 10pt;
-      font-weight: bold;
-      border-bottom: 1px solid #333;
-      border-top: 1px solid #333;
-      margin-bottom: 4px;
-    }
-
-    .education-table, .skills-table {
-      width: 100%;
-      border-collapse: collapse;
+    .section {
       margin-bottom: 8px;
     }
 
+    .section h2 {
+      text-align: center;
+      font-size: 10pt;
+      font-weight: bold;
+      border-top: 1px solid #999;
+      border-bottom: 1px solid #999;
+      /* margin-bottom: 4px; */
+      padding: 4px 0;
+    }
+
+    .education-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 6px;
+    }
+
     .education-table th, .education-table td {
-      border: 1px solid #333;
-      padding: 4px 6px;
+      border: 1px solid #999;
+      padding: 3px 5px;
       font-size: 9pt;
       text-align: left;
     }
@@ -81,7 +82,7 @@
     }
 
     .project {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .project-title {
@@ -99,24 +100,17 @@
     .project-highlights li,
     .coursework,
     .position-description li,
-    .achievements li,
-    .activities li {
+    .achievements li {
       font-size: 9pt;
       text-align: justify;
     }
 
     .project-highlights {
-      font-size: 9pt;  
       margin: 1px 0;
-    }
-
-    .project-highlights strong {
-      font-weight: bold;
     }
 
     .project-highlights ul {
       margin: 0px 0 0px 18px;
-      padding-left: 0;
     }
 
     .project-highlights li {
@@ -132,18 +126,16 @@
     .skills-grid {
       display: flex;
       flex-direction: column;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-
-
     .position {
-      margin-bottom: 8px;
+      /* margin-bottom: 6px; */
     }
 
     .position-title {
       font-weight: bold;
-      font-size: 10pt;
+      font-size: 9pt;
     }
 
     .position-duration {
@@ -154,26 +146,26 @@
 
     .position-description {
       clear: both;
-      margin-top: 4px;
+      /* margin-top: 4px; */
     }
 
     .position-description ul,
-    .achievements ul,
-    .activities ul {
+    .achievements ul {
       margin: 2px 0 2px 18px;
     }
+
     @media print {
       body {
-        padding: 0.3in;
-        font-size: 9.5pt;
+        padding: 0.25in;
+        font-size: 9pt;
       }
 
       .section {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
       }
 
       .project {
-        margin-bottom: 8px;
+        margin-bottom: 5px;
       }
 
       .education-table th, .education-table td {
@@ -187,9 +179,9 @@
     <h1>DHRUV GUPTA | 23HS10063</h1>
     <p>Indian Institute of Technology Kharagpur</p>
     <div class="contact">
-      <a class="link" href="mailto:dhruvpahariya692@gmail.com">dhruvpahariya692@gmail.com</a> |
-      <a class="link" href="https://linkedin.com/in/dhruv-gupta-9285692a2" target="_blank">https://www.linkedin.com/in/dhruv-gupta-9285692a2</a> |
-      <a class="link" href="https://github.com/dhruvgupta-14" target="_blank">https://github.com/dhruvgupta-14</a>
+      <a href="mailto:dhruvpahariya692@gmail.com">dhruvpahariya692@gmail.com</a> |
+      <a href="https://linkedin.com/in/dhruv-gupta-9285692a2">linkedin.com/in/dhruv-gupta-9285692a2</a> |
+      <a href="https://github.com/dhruvgupta-14">github.com/dhruvgupta-14</a>
     </div>
   </div>
 
@@ -211,113 +203,93 @@
         <td>Little Angel Public School, Pichhore</td>
         <td>94.6%</td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>2020 - Class X, CBSE</td>
         <td>Little Angel Public School, Pichhore</td>
         <td>83%</td>
-      </tr>
+      </tr> -->
     </table>
   </div>
 
   <div class="section">
     <h2>PROJECTS</h2>
-    
     <div class="project">
-      <div class="project-title">DropStack -- A Smarter Way to Store and Search Online Content <span class="project-type">| Self Project</span></div>
+      <div class="project-title">DropStack — A Smarter Way to Store and Search Online Content <span class="project-type">| Self Project</span></div>
       <div class="project-description">
-        A full-stack productivity web application to organize saved content (notes, links, tweets, images) with semantic search and real-time messaging, replacing the clutter of self-messaging platforms like WhatsApp.
+        A full-stack productivity web application to organize saved content (notes, links, tweets, images) with semantic search and real-time messaging, replacing self-messaging in app like WhatsApp.
       </div>
       <div class="project-highlights">
         <strong>Key Features:</strong>
         <ul>
           <li>Built responsive UI using <strong>React.js</strong> and <strong>TailwindCSS</strong></li>
           <li>Real-time chat interface with WebSocket support</li>
-          <li>RESTful APIs for content management and search</li>
-          <li>Secure auth with <strong>JWT</strong> and <strong>bcryptjs</strong></li>
-          <li>File upload with <strong>Multer</strong> and <strong>Cloudinary</strong></li>
-          <li>WebSocket real-time messaging</li>
-          <li>Semantic search using <strong>Pinecone Vector DB</strong></li>
+          <li>RESTful APIs, JWT Auth, Pinecone Vector DB for semantic search</li>
         </ul>
       </div>
-      <div class="tech-stack">Tech Stack: React.js, TailwindCSS, Node.js, Express.js, MongoDB, WebSocket, JWT, Pinecone, Multer, Cloudinary</div>
-      <div class="repo-link">Repo: <a href="https://github.com/dhruvgupta-14/second-brain-be"> https://github.com/dhruvgupta-14/second-brain-be</a></div>
+      <div class="tech-stack">Tech Stack: React.js, TailwindCSS, Node.js, Express.js, MongoDB, WebSocket, JWT, Pinecone</div>
+      <div class="repo-link">Repo: <a href="https://github.com/dhruvgupta-14/second-brain-be">github.com/dhruvgupta-14/second-brain-be</a></div>
     </div>
 
     <div class="project">
-      <div class="project-title">Bolt AI Clone -- AI-Powered React/Node Code Generator with Live Preview <span class="project-type">| Self Project</span></div>
+      <div class="project-title">KGP Connect — LinkedIn-like Platform for IIT KGP <span class="project-type">| Technology Student's Gymkhana</span></div>
       <div class="project-description">
-        A web application that replicates the core functionality of Bolt AI, allowing users to generate full-stack code using Google's <strong>Gemini LLM API</strong>. Includes live preview and structured input parsing.
-      </div>
-      <div class="project-highlights">
-        <strong>Key Features:</strong>
-        <ul>
-          <li>AI-Based Code Generation with Gemini API</li>
-          <li>Live Preview via Webhooks</li>
-          <li>Structured Object Parsing</li>
-          <li>Choose between frontend (React) or backend (Node.js)</li>
-        </ul>
-      </div>
-      <div class="tech-stack">Tech Stack: React.js, Node.js, Express.js, Gemini API, Webhooks, TailwindCSS</div>
-      <div class="repo-link">Repo: <a class="link" href="https://github.com/dhruvgupta-14/bolt.ai-be">https://github.com/dhruvgupta-14/bolt.ai-be</a> </div>
-    </div>
-
-    <div class="project">
-      <div class="project-title">KGP Connect -- LinkedIn-like Platform for IIT KGP <span class="project-type">| Technology Student's Gymkhana</span></div>
-      <div class="project-description">
-        Developed frontend for a platform connecting IIT Kharagpur students and alumni. Inspired by LinkedIn, it includes internship portals, post feeds, and scholarship listings.
+        Developed frontend for a platform connecting IIT Kharagpur students and alumni. Inspired by LinkedIn, includes internship portals, post feeds, and scholarships.
       </div>
       <div class="project-highlights">
         <strong>Key Contributions:</strong>
         <ul>
           <li>Frontend UI with React.js and TailwindCSS</li>
           <li>Internship and scholarship pages</li>
-          <li>Post feed and profile pages</li>
-          <li>Collaboration with backend team for integration</li>
+          <li>Collaborated with backend team</li>
         </ul>
       </div>
-      <div class="tech-stack">Tech Stack: React.js, TailwindCSS, Axios, React Router, REST APIs</div>
-      <div class="repo-link">Link: <a class="link" href="https://kgp-connect-5czt.vercel.app/">https://kgp-connect-5czt.vercel.app/</a> </div>
+      <div class="tech-stack">Tech Stack: React.js, TailwindCSS, Axios, React Router</div>
+      <div class="repo-link">Link: <a href="https://kgp-connect-5czt.vercel.app/">kgp-connect-5czt.vercel.app</a></div>
     </div>
   </div>
 
   <div class="section">
-    <h2>SKILLS AND EXPERTISE</h2>
-    <div class="skills-grid">
-      <div class="skills-category"><strong>Programming Languages:</strong>C, C++, JavaScript, TypeScript, Python</div>
-      <div class="skills-category"><strong>Frameworks and Libraries:</strong>React.js, Next.js, Node.js, Express.js, Tailwind CSS</div>
-      <div class="skills-category"><strong>Database & Storage:</strong>MongoDB, PostgreSQL, Pinecone, Cloudinary</div>
-      <div class="skills-category"><strong>Tools & Tech:</strong> GitHub, VS Code,Postman,MS Excel, Stata, LLM APIs</div>
-    </div>
-  </div>
-  <div class="section">
-    <h2>COURSEWORK</h2>
-    <div class="coursework">
-      Programming and Data Structure | Probability and Statistics | Advanced Calculus | Statistics for Economics | Econometrics Analysis I | Linear Algebra
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>POSITIONS OF RESPONSIBILITY</h2>
-    <div class="position">
-      <div class="position-title">Secretary Web | Technology Students' Gymkhana <span class="position-duration">Oct'24 - May'25</span></div>
-      <div class="position-description">
-        <ul>
-          <li>Redesigned frontend of official Gymkhana website</li>
-          <li>Built Events and Society section with React</li>
-          <li>Designed UI/UX for gym slot booking system</li>
-          <li>Collaborated with Alumni Cell to create <em>KGP Connect</em></li>
-        </ul>
+    <h2>SKILLS, COURSEWORK & POSITIONS</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+      <div>
+        <h3 style="font-size: 9.5pt; font-weight: bold; margin-bottom: 4px;">Skills and Expertise</h3>
+        <div><strong>Languages:</strong> C, C++, JavaScript, TypeScript</div>
+        <div><strong>Frameworks:</strong> React.js, Next.js, Node.js, Express.js, Tailwind CSS</div>
+        <div><strong>Databases:</strong> MongoDB, PostgreSQL, Pinecone, Cloudinary</div>
+        <div><strong>Tools:</strong> GitHub, VS Code, Postman, MS Excel, Stata, LLM APIs</div>
       </div>
-    </div>
 
-    <div class="position">
-      <div class="position-title">Senior Executive | Gopali Youth Welfare Society <span class="position-duration">July'24 - May'25</span></div>
-      <div class="position-description">
-        <ul>
-          <li>Coordinated initiatives to provide free education and hostel facilities for underprivileged students under Jagrati Vidya Mandir.</li>
-          <li>Actively contributed to organizing major events like Aashayein to inspire and support students.</li>
-          <li>Primarily worked on frontend development and maintenance of the Gopali Youth Welfare Society website.</li>
-        </ul>
+      <div style="border-left: 1.5px solid #999; padding-left: 8px;">
+        <h3 style="font-size: 9.5pt; font-weight: bold; margin-bottom: 4px;">Coursework</h3>
+        <div class="coursework">
+          Programming and Data Structure | Probability and Statistics | Advanced Calculus | Statistics for Economics | Econometrics | Linear Algebra
+        </div>
+      </div>
+
+      <div style="grid-column: span 2;border-top: 1.5px solid #999; ">
+        <h3 style="font-size: 9.5pt; font-weight: bold; margin-top: 6px;">Positions of Responsibility</h3>
+        <div class="position">
+          <div class="position-title">Secretary Web | Technology Students' Gymkhana <span class="position-duration">Oct'24 - May'25</span></div>
+          <div class="position-description">
+            <ul>
+              <li>Redesigned official Gymkhana website</li>
+              <li>Built Events and Society section with React</li>
+              <li>Designed UI/UX for gym slot booking system</li>
+              <li>Collaborated with Alumni Cell on <em>KGP Connect</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="position">
+          <div class="position-title">Senior Executive | Gopali Youth Welfare Society <span class="position-duration">July'24 - May'25</span></div>
+          <div class="position-description">
+            <ul>
+              <li>Coordinated initiatives to provide free education and hostel facilities for underprivileged students under Jagrati Vidya Mandir.</li>
+              <li>Actively contributed to organizing major events like Aashayein to inspire and support students.</li>
+              <li>Primarily worked on frontend development and maintenance of the Gopali Youth Welfare Society website.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -333,3 +305,4 @@
   </div>
 </body>
 </html>
+
